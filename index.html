@@ -13,7 +13,8 @@
     <!-- Google Font Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Tailwind Custom Classes -->
     <script>
@@ -21,7 +22,10 @@
             theme: {
                 extend: {
                     colors: {
-                        'hockey-primary': '#FF4240',
+                        'cs-primary': '#FF4240',
+                        'cs-dark': '#131318',
+                        'cs-black-60': '#13131899',
+                        'cs-white-60': '#ffffff99',
                     }
                 }
             }
@@ -95,16 +99,72 @@
                     </div>
                 </div>
                 <!-- Badge -->
-                <div class="mt-4 lg:absolute bg-[#131318FF] w-full lg:w-1/2 p-4 lg:p-8 rounded-xl lg:rounded-2xl lg:bottom-8 lg:right-8">
-                    <h1 class="text-lg lg:text-2xl text-white pb-2 lg:pb-4">Meet all the heroes from the field</h1>
-                    <p class="text-sm lg:text-base text-[#ffffff99]">Discover the heart and soul of our team as you meet all the heroes from the field</p>
+                <div
+                    class="mt-4 lg:absolute bg-cs-dark w-full lg:w-1/2 p-4 lg:p-8 rounded-xl lg:rounded-2xl lg:bottom-8 lg:right-8">
+                    <h1 class="text-lg lg:text-2xl text-white font-extrabold pb-2 lg:pb-4">Meet all the heroes from the
+                        field</h1>
+                    <p class="text-sm lg:text-base text-cs-white-60 font-medium">Discover the heart and soul of our team
+                        as you meet all the heroes from the field</p>
                 </div>
             </div>
         </section>
 
         <!-- Pro Club -->
-        <section>
-
+        <section class="mt-12 lg:mt-32">
+            <!-- Description -->
+            <div class="border border-dashed border-l-0 border-r-0 py-4">
+                <div class="w-[90%] lg:w-2/3 mx-auto text-center">
+                    <h1 class="text-[1.375rem] lg:text-4xl text-cs-dark font-extrabold">Professional Hockeys Club</h1>
+                    <p class="text-sm lg:text-base text-cs-black-60 pt-4 lg:pt-6 font-medium">At our Professional Hockey Club, excellence is not just a goal; it's a tradition. Join us in celebrating a legacy of skill, teamwork, and the relentless pursuit of victory as we redefine the standards of professional hockey.</p>
+                </div>
+            </div>
+            <!-- Percentage -->
+            <div class="mt-6 lg:mt-20 grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="radial-progress text-[#FF4240FF] rotate-90 scale-x-[-1]"
+                        style="--value:87; --size: 6rem;" role="progressbar">
+                        <div class="text-cs-dark text-[1.75rem] font-extrabold rotate-90 scale-x-[-1]">87%</div>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-cs-dark font-semibold text-xl">Player Facility</h2>
+                        <p class="mt-4 text-cs-black-60 font-normal text-base">Cutting-edge amenities. <br> Personalized
+                            training spaces.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#49D293FF] rotate-90 scale-x-[-1]"
+                        style="--value:95; --size: 6rem;" role="progressbar">
+                        <div class="text-cs-dark text-[1.75rem] font-extrabold rotate-90 scale-x-[-1]">95%</div>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-cs-dark font-semibold text-xl">Experienced Coach</h2>
+                        <p class="mt-4 text-cs-black-60 font-normal text-base">Strategic expertise. <br> Player
+                            development focus.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#FFB546FF] rotate-90 scale-x-[-1]"
+                        style="--value:90; --size: 6rem;" role="progressbar">
+                        <div class="text-cs-dark text-[1.75rem] font-extrabold rotate-90 scale-x-[-1]">90%</div>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-cs-dark font-semibold text-xl">Senior Player</h2>
+                        <p class="mt-4 text-cs-black-60 font-normal text-base">Leadership mentorship. <br> Championship
+                            experience.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#4C8DF1FF] rotate-90 scale-x-[-1]"
+                        style="--value:80; --size: 6rem;" role="progressbar">
+                        <div class="text-cs-dark text-[1.75rem] font-extrabold rotate-90 scale-x-[-1]">80%</div>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-cs-dark font-semibold text-xl">Training Ground</h2>
+                        <p class="mt-4 text-cs-black-60 font-normal text-base">State-of-the-art facilities. <br>
+                            Specialized drills and exercises.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
