@@ -10,10 +10,107 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Google Font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Custom Classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'hockey-primary': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    
+<body class="font-manrope">
+    <!-- Navigation Bar -->
+    <header>
+
+    </header>
+
+    <main class="container mx-auto px-4 lg:px-20">
+        <!-- Slider Banner -->
+        <section class="my-4">
+            <!-- Extra Div for Absolute Badge on Carousel -->
+            <div class="relative">
+                <!-- Carousel Container -->
+                <div class="carousel w-full h-[200px] lg:h-[80vh]">
+                    <!-- Slide 1 -->
+                    <div id="slide1" class="carousel-item relative w-full rounded-xl lg:rounded-2xl overflow-hidden">
+                        <img src="./images/1.png" class="w-full" />
+                        <div
+                            class="absolute flex gap-4 -translate-x-1/2 lg:translate-x-0 left-[50%] lg:left-8 bottom-4 lg:bottom-8">
+                            <a href="#slide4"
+                                class="button rounded-full bg-black w-7 h-7 lg:w-12 lg:h-12 text-white text-sm lg:text-2xl text-center p-1 lg:p-2">❮</a>
+                            <a href="#slide2"
+                                class="button rounded-full bg-black w-7 h-7 lg:w-12 lg:h-12 text-white text-sm lg:text-2xl text-center p-1 lg:p-2">❯</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div id="slide2" class="carousel-item relative w-full rounded-xl lg:rounded-2xl overflow-hidden">
+                        <img src="./images/1_2.png" class="w-full" />
+                        <div
+                            class="absolute flex gap-4 -translate-x-1/2 lg:translate-x-0 left-[50%] lg:left-8 bottom-4 lg:bottom-8">
+                            <a href="#slide1"
+                                class="button rounded-full bg-black w-7 h-7 lg:w-12 lg:h-12 text-white text-sm lg:text-2xl text-center p-1 lg:p-2">❮</a>
+                            <a href="#slide3"
+                                class="button rounded-full bg-black w-7 h-7 lg:w-12 lg:h-12 text-white text-sm lg:text-2xl text-center p-1 lg:p-2">❯</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div id="slide3" class="carousel-item relative w-full rounded-xl lg:rounded-2xl overflow-hidden">
+                        <img src="./images/1_3.png" class="w-full" />
+                        <div
+                            class="absolute flex gap-4 -translate-x-1/2 lg:translate-x-0 left-[50%] lg:left-8 bottom-4 lg:bottom-8">
+                            <a href="#slide2"
+                                class="button rounded-full bg-black w-7 h-7 lg:w-12 lg:h-12 text-white text-sm lg:text-2xl text-center p-1 lg:p-2">❮</a>
+                            <a href="#slide4"
+                                class="button rounded-full bg-black w-7 h-7 lg:w-12 lg:h-12 text-white text-sm lg:text-2xl text-center p-1 lg:p-2">❯</a>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div id="slide4" class="carousel-item relative w-full rounded-xl lg:rounded-2xl overflow-hidden">
+                        <img src="./images/1_4.png" class="w-full bg-cover" />
+                        <div
+                            class="absolute flex gap-4 -translate-x-1/2 lg:translate-x-0 left-[50%] lg:left-8 bottom-4 lg:bottom-8">
+                            <a href="#slide3"
+                                class="button rounded-full bg-black w-7 h-7 lg:w-12 lg:h-12 text-white text-sm lg:text-2xl text-center p-1 lg:p-2">❮</a>
+                            <a href="#slide1"
+                                class="button rounded-full bg-black w-7 h-7 lg:w-12 lg:h-12 text-white text-sm lg:text-2xl text-center p-1 lg:p-2">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Badge -->
+                <div class="mt-4 lg:absolute bg-[#131318FF] w-full lg:w-1/2 p-4 lg:p-8 rounded-xl lg:rounded-2xl lg:bottom-8 lg:right-8">
+                    <h1 class="text-lg lg:text-2xl text-white pb-2 lg:pb-4">Meet all the heroes from the field</h1>
+                    <p class="text-sm lg:text-base text-[#ffffff99]">Discover the heart and soul of our team as you meet all the heroes from the field</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pro Club -->
+        <section>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
